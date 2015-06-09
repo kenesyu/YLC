@@ -1630,6 +1630,8 @@
     <Content Include="Admin\js\toucheffects.js" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\Main.aspx" />
+    <Content Include="Admin\menubar.ascx" />
+    <Content Include="Admin\ZNGL.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1652,6 +1654,20 @@
     </Compile>
     <Compile Include="Admin\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\menubar.ascx.cs">
+      <DependentUpon>menubar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\menubar.ascx.designer.cs">
+      <DependentUpon>menubar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ZNGL.aspx.cs">
+      <DependentUpon>ZNGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ZNGL.aspx.designer.cs">
+      <DependentUpon>ZNGL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
