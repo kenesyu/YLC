@@ -14,6 +14,12 @@
                           <li><a  href="zngl.aspx?id=3">科室介绍</a></li>
                       </ul>
                   </li>
+                  <li class="sub-menu">
+                      <a href="ZWXX_List.aspx">
+                          <i class="icon-laptop"></i>
+                          <span>政务信息</span>
+                      </a>
+                  </li>
               </ul>
               <!-- sidebar menu end-->
           </div>

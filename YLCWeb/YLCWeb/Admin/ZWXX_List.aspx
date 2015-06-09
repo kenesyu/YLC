@@ -1,5 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="YLCWeb.Admin.Main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZWXX_List.aspx.cs" Inherits="YLCWeb.Admin.ZWXX_List" %>
+
 <%@ Register src="menubar.ascx" tagname="menubar" tagprefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="en">
@@ -47,9 +49,48 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper site-min-height">
+          <section class="wrapper">
               <!-- page start-->
-              Page content goes here
+              <div class="row">
+                  <div class="col-lg-12">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              信息列表
+                          </header>
+                          <div style="text-align:right">
+                          <button type="submit" onclick="location.href='ZWXX.aspx'" class="btn btn-success">添加信息</button>
+                          &nbsp;&nbsp;</div>
+                          
+                          <table class="table table-striped table-advance table-hover">
+                              <thead>
+                              
+                              <tr>
+                                  <th><i class="icon-bullhorn"></i> 类别</th>
+                                  <th class="hidden-phone"><i class="icon-question-sign"></i> 标题</th>
+                                  <th><i class="icon-bookmark"></i> 发布日期</th>
+                                  <th></th>
+                              </tr>
+                              
+                              </thead>
+                              <asp:Repeater ID="replist" runat="server">
+                              <ItemTemplate>
+                              <tr>
+                                  <td><a href="#"><%# Eval("Type") %></a></td>
+                                  <td class="hidden-phone"><%# Eval("Title") %></td>
+                                  <td><%# Eval("CreateTime") %></td>
+                                  <td>
+                                      <button class="btn btn-primary btn-xs" onclick="location.href='zwxx.aspx?id=<%# Eval("id") %>'"><i class="icon-pencil">&nbsp;修改</i></button>
+                                      <button class="btn btn-danger btn-xs" runat="server" id="btnDelete"><i class="icon-trash ">&nbsp;删除</i></button>
+                                  </td>
+                              </tr>
+                             </ItemTemplate>
+
+                           </asp:Repeater>
+                          </table>
+                          
+                      </section>
+                  </div>
+              </div>
               <!-- page end-->
           </section>
       </section>
@@ -68,7 +109,6 @@
 
     <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
-
 
   </body>
 </html>

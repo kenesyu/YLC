@@ -12,7 +12,7 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>职能管理</title>
+    <title>后台管理</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -87,16 +87,6 @@
           </section>
       </section>
       <!--main content end-->
-      <!--footer start-->
-      <footer class="site-footer">
-          <div class="text-center">
-              2015 &copy;
-              <a href="#" class="go-top">
-                  <i class="icon-angle-up"></i>
-              </a>
-          </div>
-      </footer>
-      <!--footer end-->
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
