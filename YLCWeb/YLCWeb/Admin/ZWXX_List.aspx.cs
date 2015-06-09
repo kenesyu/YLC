@@ -24,5 +24,20 @@ namespace YLCWeb.Admin
                 dbHelper.Dispose();
             }
         }
+
+        protected void replist_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            String str=e.CommandName.ToString();//.toString（）；
+              if(str=="Delete"){
+                  DataBaseHelper dbHelper = new DataBaseHelper(ConfigurationManager.ConnectionStrings["DB"].ToString());
+                  dbHelper.ExecuteNonQuery("delete from T_ZWXX where id = " + e.CommandArgument.ToString());
+                  dbHelper.Dispose();
+                  Response.Redirect("ZWXX_List.aspx");
+              }
+              else if (str == "Update")
+              {
+                  Response.Redirect("ZWXX.aspx?id=" + e.CommandArgument.ToString());
+              }
+        }
     }
 }

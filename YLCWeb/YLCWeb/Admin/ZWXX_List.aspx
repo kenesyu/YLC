@@ -32,7 +32,7 @@
   </head>
 
   <body>
-
+  <form id="form1" runat="server">
   <section id="container" class="">
       <!--header start-->
       <header class="header white-bg">
@@ -58,7 +58,7 @@
                               信息列表
                           </header>
                           <div style="text-align:right">
-                          <button type="submit" onclick="location.href='ZWXX.aspx'" class="btn btn-success">添加信息</button>
+                          <a class="btn btn-success" href="ZWXX.aspx">添加信息</a>
                           &nbsp;&nbsp;</div>
                           
                           <table class="table table-striped table-advance table-hover">
@@ -72,15 +72,16 @@
                               </tr>
                               
                               </thead>
-                              <asp:Repeater ID="replist" runat="server">
+                              <asp:Repeater ID="replist" runat="server" onitemcommand="replist_ItemCommand">
                               <ItemTemplate>
                               <tr>
                                   <td><a href="#"><%# Eval("Type") %></a></td>
                                   <td class="hidden-phone"><%# Eval("Title") %></td>
                                   <td><%# Eval("CreateTime") %></td>
                                   <td>
-                                      <button class="btn btn-primary btn-xs" onclick="location.href='zwxx.aspx?id=<%# Eval("id") %>'"><i class="icon-pencil">&nbsp;修改</i></button>
-                                      <button class="btn btn-danger btn-xs" runat="server" id="btnDelete"><i class="icon-trash ">&nbsp;删除</i></button>
+                                      <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-xs" Text="修改" CommandArgument='<%#Eval("ID") %>' CommandName="Update" />
+                                      <asp:Button ID="Button2" runat="server" class="btn btn-danger btn-xs" OnClientClick="if(!confirm('确认删除？')) return false;" Text="删除" CommandArgument='<%#Eval("ID") %>' CommandName="Delete" />
+<%--                                      <button class="btn btn-danger btn-xs" onclick="return confirm('确认删除？')?'true':'false'" runat="server" id="btnDelete" CommandArgument='<%#Eval("ID") %>' CommandName="Delete"><i class="icon-trash ">&nbsp;删除</i></button>--%>
                                   </td>
                               </tr>
                              </ItemTemplate>
@@ -109,6 +110,6 @@
 
     <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
-
+</form>
   </body>
 </html>
