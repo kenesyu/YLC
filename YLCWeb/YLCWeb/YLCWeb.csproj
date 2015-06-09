@@ -1631,10 +1631,40 @@
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\Main.aspx" />
     <Content Include="Admin\menubar.ascx" />
+    <Content Include="Admin\MessageBoard.aspx" />
     <Content Include="Admin\ZCFG.aspx" />
     <Content Include="Admin\ZNGL.aspx" />
     <Content Include="Admin\ZWXX.aspx" />
     <Content Include="Admin\ZWXX_List.aspx" />
+    <Content Include="css\basic.css" />
+    <Content Include="css\ie-css3.htc" />
+    <Content Include="css\pages.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="img\bg_003.png" />
+    <Content Include="img\bg_body.jpg" />
+    <Content Include="img\blank.png" />
+    <Content Include="img\head_bg.png" />
+    <Content Include="img\icon_001.jpg" />
+    <Content Include="img\icon_002.jpg" />
+    <Content Include="img\icon_003.jpg" />
+    <Content Include="img\icon_004.jpg" />
+    <Content Include="img\icon_005.jpg" />
+    <Content Include="img\icon_006.jpg" />
+    <Content Include="img\icon_007.jpg" />
+    <Content Include="img\img_b.jpg" />
+    <Content Include="img\img_s1.jpg" />
+    <Content Include="img\img_s2.jpg" />
+    <Content Include="img\img_s3.jpg" />
+    <Content Include="img\map.jpg" />
+    <Content Include="img\menu_bg.jpg" />
+    <Content Include="img\op_b50.png" />
+    <Content Include="img\op_w50.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\base.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\main.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1665,6 +1695,13 @@
     <Compile Include="Admin\menubar.ascx.designer.cs">
       <DependentUpon>menubar.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\MessageBoard.aspx.cs">
+      <DependentUpon>MessageBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MessageBoard.aspx.designer.cs">
+      <DependentUpon>MessageBoard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ZCFG.aspx.cs">
       <DependentUpon>ZCFG.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1692,6 +1729,13 @@
     </Compile>
     <Compile Include="Admin\ZWXX_List.aspx.designer.cs">
       <DependentUpon>ZWXX_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1962,6 +2006,7 @@
     <None Include="Admin\img\.DS_Store" />
     <None Include="Admin\img\file-search\.DS_Store" />
     <None Include="Admin\img\gallery\.DS_Store" />
+    <None Include="img\Thumbs.db" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

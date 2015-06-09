@@ -32,6 +32,12 @@
                           <li><a  href="zcfg.aspx?id=4">法规制度</a></li>
                       </ul>
                   </li>
+                  <li class="sub-menu">
+                      <a href="MessageBoard.aspx">
+                          <i class="icon-laptop"></i>
+                          <span>留言板</span>
+                      </a>
+                  </li>
               </ul>
               <!-- sidebar menu end-->
           </div>
