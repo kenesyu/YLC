@@ -1631,6 +1631,7 @@
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\Main.aspx" />
     <Content Include="Admin\menubar.ascx" />
+    <Content Include="Admin\ZCFG.aspx" />
     <Content Include="Admin\ZNGL.aspx" />
     <Content Include="Admin\ZWXX.aspx" />
     <Content Include="Admin\ZWXX_List.aspx" />
@@ -1663,6 +1664,13 @@
     </Compile>
     <Compile Include="Admin\menubar.ascx.designer.cs">
       <DependentUpon>menubar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ZCFG.aspx.cs">
+      <DependentUpon>ZCFG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ZCFG.aspx.designer.cs">
+      <DependentUpon>ZCFG.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ZNGL.aspx.cs">
       <DependentUpon>ZNGL.aspx</DependentUpon>

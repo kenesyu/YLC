@@ -20,6 +20,18 @@
                           <span>政务信息</span>
                       </a>
                   </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;">
+                          <i class="icon-laptop"></i>
+                          <span>政策法规</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="zcfg.aspx?id=1">审核流程</a></li>
+                          <li><a  href="zcfg.aspx?id=2">规划建设</a></li>
+                          <li><a  href="zcfg.aspx?id=3">规范管理</a></li>
+                          <li><a  href="zcfg.aspx?id=4">法规制度</a></li>
+                      </ul>
+                  </li>
               </ul>
               <!-- sidebar menu end-->
           </div>

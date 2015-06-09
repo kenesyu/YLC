@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZNGL.aspx.cs" ValidateRequest="false" Inherits="YLCWeb.Admin.ZNGL" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZCFG.aspx.cs" Inherits="YLCWeb.Admin.ZCFG" %>
+
 <%@ Register src="menubar.ascx" tagname="menubar" tagprefix="uc1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
