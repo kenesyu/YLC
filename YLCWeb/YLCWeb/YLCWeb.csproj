@@ -962,6 +962,7 @@
     <Content Include="Admin\assets\chart-master\site\assets\simple.png" />
     <Content Include="Admin\assets\chart-master\site\index.html" />
     <Content Include="Admin\assets\chart-master\site\styles.css" />
+    <Content Include="Admin\assets\ckeditor\adapters\jquery.js" />
     <Content Include="Admin\assets\ckeditor\build-config.js" />
     <Content Include="Admin\assets\ckeditor\ckeditor.js" />
     <Content Include="Admin\assets\ckeditor\config.js" />
@@ -996,6 +997,7 @@
     <Content Include="Admin\assets\ckeditor\lang\hi.js" />
     <Content Include="Admin\assets\ckeditor\lang\hr.js" />
     <Content Include="Admin\assets\ckeditor\lang\hu.js" />
+    <Content Include="Admin\assets\ckeditor\lang\id.js" />
     <Content Include="Admin\assets\ckeditor\lang\is.js" />
     <Content Include="Admin\assets\ckeditor\lang\it.js" />
     <Content Include="Admin\assets\ckeditor\lang\ja.js" />
@@ -1016,19 +1018,23 @@
     <Content Include="Admin\assets\ckeditor\lang\pt.js" />
     <Content Include="Admin\assets\ckeditor\lang\ro.js" />
     <Content Include="Admin\assets\ckeditor\lang\ru.js" />
+    <Content Include="Admin\assets\ckeditor\lang\si.js" />
     <Content Include="Admin\assets\ckeditor\lang\sk.js" />
     <Content Include="Admin\assets\ckeditor\lang\sl.js" />
+    <Content Include="Admin\assets\ckeditor\lang\sq.js" />
     <Content Include="Admin\assets\ckeditor\lang\sr-latn.js" />
     <Content Include="Admin\assets\ckeditor\lang\sr.js" />
     <Content Include="Admin\assets\ckeditor\lang\sv.js" />
     <Content Include="Admin\assets\ckeditor\lang\th.js" />
     <Content Include="Admin\assets\ckeditor\lang\tr.js" />
+    <Content Include="Admin\assets\ckeditor\lang\tt.js" />
     <Content Include="Admin\assets\ckeditor\lang\ug.js" />
     <Content Include="Admin\assets\ckeditor\lang\uk.js" />
     <Content Include="Admin\assets\ckeditor\lang\vi.js" />
     <Content Include="Admin\assets\ckeditor\lang\zh-cn.js" />
     <Content Include="Admin\assets\ckeditor\lang\zh.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
@@ -1037,20 +1043,26 @@
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
@@ -1064,63 +1076,182 @@
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
     <Content Include="Admin\assets\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
     <Content Include="Admin\assets\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
     <Content Include="Admin\assets\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
     <Content Include="Admin\assets\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
     <Content Include="Admin\assets\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\div\dialogs\div.js" />
     <Content Include="Admin\assets\ckeditor\plugins\fakeobjects\images\spacer.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\forms\images\hiddenfield.gif" />
     <Content Include="Admin\assets\ckeditor\plugins\icons.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\iframe\images\placeholder.png" />
     <Content Include="Admin\assets\ckeditor\plugins\image\dialogs\image.js" />
     <Content Include="Admin\assets\ckeditor\plugins\image\images\noimage.png" />
     <Content Include="Admin\assets\ckeditor\plugins\link\dialogs\anchor.js" />
     <Content Include="Admin\assets\ckeditor\plugins\link\dialogs\link.js" />
     <Content Include="Admin\assets\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\magicline\images\icon-rtl.png" />
     <Content Include="Admin\assets\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
     <Content Include="Admin\assets\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\preview\preview.html" />
     <Content Include="Admin\assets\ckeditor\plugins\scayt\dialogs\options.js" />
     <Content Include="Admin\assets\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
     <Content Include="Admin\assets\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
     <Content Include="Admin\assets\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
     <Content Include="Admin\assets\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Admin\assets\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Admin\assets\ckeditor\plugins\templates\templates\images\template3.gif" />
     <Content Include="Admin\assets\ckeditor\plugins\wsc\dialogs\ciframe.html" />
     <Content Include="Admin\assets\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
     <Content Include="Admin\assets\ckeditor\plugins\wsc\dialogs\wsc.css" />
     <Content Include="Admin\assets\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Admin\assets\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
     <Content Include="Admin\assets\ckeditor\samples\ajax.html" />
     <Content Include="Admin\assets\ckeditor\samples\api.html" />
     <Content Include="Admin\assets\ckeditor\samples\appendto.html" />
@@ -1129,10 +1260,13 @@
     <Content Include="Admin\assets\ckeditor\samples\assets\sample.css" />
     <Content Include="Admin\assets\ckeditor\samples\assets\sample.jpg" />
     <Content Include="Admin\assets\ckeditor\samples\assets\uilanguages\languages.js" />
+    <Content Include="Admin\assets\ckeditor\samples\datafiltering.html" />
     <Content Include="Admin\assets\ckeditor\samples\divreplace.html" />
     <Content Include="Admin\assets\ckeditor\samples\index.html" />
     <Content Include="Admin\assets\ckeditor\samples\inlineall.html" />
     <Content Include="Admin\assets\ckeditor\samples\inlinebycode.html" />
+    <Content Include="Admin\assets\ckeditor\samples\inlinetextarea.html" />
+    <Content Include="Admin\assets\ckeditor\samples\jquery.html" />
     <Content Include="Admin\assets\ckeditor\samples\plugins\dialog\assets\my_dialog.js" />
     <Content Include="Admin\assets\ckeditor\samples\plugins\dialog\dialog.html" />
     <Content Include="Admin\assets\ckeditor\samples\plugins\enterkey\enterkey.html" />
@@ -1165,9 +1299,17 @@
     <Content Include="Admin\assets\ckeditor\skins\moono\editor_ie8.css" />
     <Content Include="Admin\assets\ckeditor\skins\moono\editor_iequirks.css" />
     <Content Include="Admin\assets\ckeditor\skins\moono\icons.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\icons_hidpi.png" />
     <Content Include="Admin\assets\ckeditor\skins\moono\images\arrow.png" />
     <Content Include="Admin\assets\ckeditor\skins\moono\images\close.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\hidpi\close.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\hidpi\lock-open.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\hidpi\lock.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\hidpi\refresh.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\lock-open.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\lock.png" />
     <Content Include="Admin\assets\ckeditor\skins\moono\images\mini.png" />
+    <Content Include="Admin\assets\ckeditor\skins\moono\images\refresh.png" />
     <Content Include="Admin\assets\ckeditor\styles.js" />
     <Content Include="Admin\assets\data-tables\DT_bootstrap.css" />
     <Content Include="Admin\assets\data-tables\DT_bootstrap.js" />
@@ -1641,6 +1783,7 @@
     <Content Include="css\pages.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
+    <Content Include="Details.aspx" />
     <Content Include="img\bg_003.png" />
     <Content Include="img\bg_body.jpg" />
     <Content Include="img\blank.png" />
@@ -1672,6 +1815,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="ZNGL.aspx" />
+    <Content Include="ZCFG.aspx" />
+    <Content Include="ZWXX.aspx" />
+    <Content Include="MsgBoard.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\Login.aspx.cs">
@@ -1730,6 +1877,14 @@
     <Compile Include="Admin\ZWXX_List.aspx.designer.cs">
       <DependentUpon>ZWXX_List.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1738,6 +1893,34 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZNGL.aspx.cs">
+      <DependentUpon>ZNGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZNGL.aspx.designer.cs">
+      <DependentUpon>ZNGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZCFG.aspx.cs">
+      <DependentUpon>ZCFG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZCFG.aspx.designer.cs">
+      <DependentUpon>ZCFG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZWXX.aspx.cs">
+      <DependentUpon>ZWXX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZWXX.aspx.designer.cs">
+      <DependentUpon>ZWXX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBoard.aspx.cs">
+      <DependentUpon>MsgBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MsgBoard.aspx.designer.cs">
+      <DependentUpon>MsgBoard.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\assets\jquery-file-upload\server\php\files\thumbnail\" />

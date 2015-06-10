@@ -11,7 +11,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 		<!--
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
-		<title>首页>>大连海滨</title>
+		<title>大连国家级风景名胜区</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/basic.css">
@@ -20,9 +20,6 @@
 		<script type="text/javascript" src="js/base.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<!--plugin-->
-		<style>
-		
-		</style>
 		<script>
 		    $(function () {
 
@@ -39,29 +36,29 @@
                         <div class="ban_l">
                             大连海滨—旅顺口风景名胜区
                         </div>
-                        <div class="date_head">
-                            2015年6月8日 星期一 08:51<script>document.write(new Date())</script>
+                        <div class="date_head" id="time">
+                            
                         </div>
                     </div>
                     <div class="head_menu">
                     	<ul>
                         	<li>
-                            	<a href="#" class="cur">首页</a>
+                            	<a href="index.aspx" class="cur">首页</a>
                             </li>
                         	<li>
-                            	<a href="#">管理职能</a>
+                            	<a href="zngl.aspx?id=1">管理职能</a>
                             </li>
                         	<li>
                             	<a href="#">景区风光</a>
                             </li>
                         	<li>
-                            	<a href="#">政务信息</a>
+                            	<a href="zwxx.aspx?t=<%= URLConvert("景区要闻") %>">政务信息</a>
                             </li>
                         	<li>
-                            	<a href="#">政策法规</a>
+                            	<a href="zcfg.aspx?id=1">政策法规</a>
                             </li>
                         	<li>
-                            	<a href="#">在线互动</a>
+                            	<a href="MsgBoard.aspx">在线互动</a>
                             </li>
                         </ul>
                     </div>
@@ -85,36 +82,16 @@
                                 </h3>
                                 <div class="px_con">
                                 	<ul>
-                                    	<li>
-                                        	<a href="#">
-                                           		<i>招标公告2</i>
-                                                <b>2015-05-06</b>
-                                            </a>
-                                        </li>
-                                    	<li>
-                                        	<a href="#">
-                                           		<i>招标公告2</i>
-                                                <b>2015-05-06</b>
-                                            </a>
-                                        </li>
-                                    	<li>
-                                        	<a href="#">
-                                           		<i>招标公告2</i>
-                                                <b>2015-05-06</b>
-                                            </a>
-                                        </li>
-                                    	<li>
-                                        	<a href="#">
-                                           		<i>招标公告2</i>
-                                                <b>2015-05-06</b>
-                                            </a>
-                                        </li>
-                                    	<li class="last">
-                                        	<a href="#">
-                                           		<i>招标公告2</i>
-                                                <b>2015-05-06</b>
-                                            </a>
-                                        </li>
+                                        <asp:Repeater ID="repZhaobiaogonggao" runat="server">
+                                            <ItemTemplate>
+                                               <li>
+                                        	        <a target="_blank" href="details.aspx?t=ZWXX&id=<%# Eval("id") %>">
+                                           		        <i><%# Eval("Title") %></i>
+                                                        <b><%# Convert.ToDateTime(Eval("CreateTime")).ToString("yyyy-MM-dd") %></b>
+                                                    </a>
+                                                </li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
                                     </ul>
                                 </div>
                             </div>
@@ -127,10 +104,12 @@
                                 </h3>
                                 <div class="px_con1">
                                 	<div class="ht25"></div>
-                                	<form>
-                                    	<input type="text" class="box text" value="账号">
-                                    	<input type="text" class="box password" value="密码">
-                                    	<input type="submit" class="sub" value="登录">
+                                	<form runat="server">
+                                    	<input type="text" class="box text" id="username" runat="server" placeholder="用户名">
+                                    	<input type="password" class="box password" id="password" runat="server" placeholder="密码">
+                                        <asp:Button ID="btnLogin" runat="server" class="sub" Text="登录" 
+                                            onclick="btnLogin_Click" />
+   
                                     </form>
                                 </div>
                             </div>
@@ -195,36 +174,16 @@
                                     <a href="#">more&gt;&gt;</a>
                                 </h3>
                                 <ul>
-                                    <li>
-                                        <a href="#">
-                                        	<i>大连风景这边独好</i>
-                                            <b>2015-05-05</b>
+                                    <asp:Repeater ID="repjingquyaowen" runat="server">
+                                    <ItemTemplate>
+                                     <li>
+                                        <a target="_blank" href="details.aspx?t=ZWXX&id=<%# Eval("id") %>">
+                                        	<i><%# Eval("Title") %></i>
+                                            <b><%# Convert.ToDateTime(Eval("CreateTime")).ToString("yyyy-MM-dd") %></b>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                        	<i>大连风景这边独好</i>
-                                            <b>2015-05-05</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                        	<i>大连风景这边独好</i>
-                                            <b>2015-05-05</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                        	<i>大连风景这边独好</i>
-                                            <b>2015-05-05</b>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                        	<i>大连风景这边独好</i>
-                                            <b>2015-05-05</b>
-                                        </a>
-                                    </li>
+                                    </ItemTemplate>
+                                    </asp:Repeater>
                                 </ul>
                             </div>
                             <div class="clear"></div>
@@ -271,10 +230,6 @@
 			<div class="wrap">
 				<div class="foot_con">
                 	<div class="ht20"></div>
-                	<div class="foot_px1">
-                    	<a href="#">首页</a> |
-                    	<a href="#">政策法规</a>
-                    </div>
                     <div class="ht10"></div>
                     <p>
                     	©2015 大连国家级风景名胜区 版权所有
@@ -282,9 +237,7 @@
                     <div class="ht10"></div>
                 	<div class="foot_px1">
                     	<span>技术支持：</span>
-                    	<a href="#">凡科建站</a> |
-                    	<a href="#">手机版</a> |
-                    	<a href="#">管理登录</a>
+                    	<a href="#">大连易是网络科技有限公司</a>
                     </div>
                 </div>
 			</div>
@@ -296,7 +249,25 @@
 
 </style>
 <script>
-    $(function () {
+    function getDateDemo() {
+        var myDate = new Date();
+        var year = myDate.getFullYear();
+        var month = myDate.getMonth() + 1;
+        var date = myDate.getDate();
+        var hours = myDate.getHours();
+        var minutes = myDate.getMinutes();
+        var seconds = myDate.getSeconds();
 
-    });
-</script>
+        //月份的显示为两位数字如09月  
+        if (month < 10) {
+            month = "0" + month;
+        }
+        if (date < 10) {
+            date = "0" + date;
+        }
+        var dateTime = year + "年" + month + "月" + date + "日" + hours + "时" + minutes + "分" + seconds + "秒";
+        var divNode = document.getElementById("time");
+        divNode.innerHTML = dateTime;
+    }
+    window.setInterval("getDateDemo()", 1000); //每隔1秒，调用一次getDateDemo()  
+</script>  

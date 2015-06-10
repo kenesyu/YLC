@@ -11,7 +11,9 @@ namespace YLCWeb.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Login"] == null || Session["Login"].ToString().ToLower() != "true") {
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }
