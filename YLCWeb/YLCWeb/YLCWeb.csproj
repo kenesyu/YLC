@@ -1635,6 +1635,15 @@
     <Content Include="Admin\assets\nestable\index.html" />
     <Content Include="Admin\assets\nestable\jquery.nestable.css" />
     <Content Include="Admin\assets\nestable\jquery.nestable.js" />
+    <Content Include="Admin\assets\uploadify\Change Log.txt" />
+    <Content Include="Admin\assets\uploadify\jquery.uploadify.js" />
+    <Content Include="Admin\assets\uploadify\jquery.uploadify.min.js" />
+    <Content Include="Admin\assets\uploadify\license.txt" />
+    <Content Include="Admin\assets\uploadify\uploadify-cancel.png" />
+    <Content Include="Admin\assets\uploadify\uploadify.css" />
+    <Content Include="Admin\assets\uploadify\uploadify.swf" />
+    <Content Include="Admin\assets\uploadify\__MACOSX\._Change Log.txt" />
+    <Content Include="Admin\assets\uploadify\__MACOSX\._uploadify.swf" />
     <Content Include="Admin\assets\xchart\d3.v3.js" />
     <Content Include="Admin\assets\xchart\d3.v3.min.js" />
     <Content Include="Admin\assets\xchart\xcharts.css" />
@@ -1723,6 +1732,8 @@
     <Content Include="Admin\img\sm-img-2.jpg" />
     <Content Include="Admin\img\sm-img-3.jpg" />
     <Content Include="Admin\img\vector-lab.jpg" />
+    <Content Include="Admin\JQFG.aspx" />
+    <Content Include="Admin\JQFG_List.aspx" />
     <Content Include="Admin\js\additional-methods.min.js" />
     <Content Include="Admin\js\advanced-form-components.js" />
     <Content Include="Admin\js\all-chartjs.js" />
@@ -1821,6 +1832,20 @@
     <Content Include="MsgBoard.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\JQFG.aspx.cs">
+      <DependentUpon>JQFG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\JQFG.aspx.designer.cs">
+      <DependentUpon>JQFG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\JQFG_List.aspx.cs">
+      <DependentUpon>JQFG_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\JQFG_List.aspx.designer.cs">
+      <DependentUpon>JQFG_List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1884,6 +1909,7 @@
     <Compile Include="Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Handler\Uploader.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -1925,6 +1951,7 @@
   <ItemGroup>
     <Folder Include="Admin\assets\jquery-file-upload\server\php\files\thumbnail\" />
     <Folder Include="App_Data\" />
+    <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Admin\assets\advanced-datatable\.DS_Store" />
@@ -2180,6 +2207,9 @@
     <None Include="Admin\assets\morris.js-0.4.3\spec\support\placeholder.coffee" />
     <None Include="Admin\assets\nestable\.DS_Store" />
     <None Include="Admin\assets\nestable\README.md" />
+    <None Include="Admin\assets\uploadify\check-exists.php" />
+    <None Include="Admin\assets\uploadify\index.php" />
+    <None Include="Admin\assets\uploadify\uploadify.php" />
     <None Include="Admin\assets\xchart\LICENSE" />
     <None Include="Admin\assets\xchart\README.md" />
     <None Include="Admin\css\.DS_Store" />
