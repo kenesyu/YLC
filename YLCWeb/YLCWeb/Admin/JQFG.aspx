@@ -77,7 +77,7 @@
                                               </div>
                                       </div>
                                       <div class="form-group">
-                                              <label class="col-sm-2 control-label col-sm-2">图片</label>
+                                              <label class="col-sm-2 control-label col-sm-2">上传图片</label>
                                               <div class="col-sm-10">
                                                   	<div id="queue"></div>
 		                                            <input id="file_upload" name="file_upload" type="file" multiple="true">
@@ -86,7 +86,8 @@
                                          <div class="form-group">
                                               <label class="col-sm-2 control-label col-sm-2"></label>
                                               <div class="col-sm-10" style=" text-align:center">
-                                              <asp:TextBox ID="txtID" runat="server" style="display:none"></asp:TextBox>
+                                              <asp:TextBox ID="txtID" runat="server" Text="0" style="display:none"></asp:TextBox>
+                                              <asp:TextBox ID="txtImg" runat="server" Text="0" style="display:none"></asp:TextBox> 
                                               <asp:Button runat="server" id="btnSubmit" runat="server" class="btn btn-danger" 
                                                       Text="提交" onclick="btnSubmit_Click" />
 <%--                                              <button type="submit" runat="server" id="btnSubmit" class="btn btn-danger">提交</button>--%>
@@ -138,16 +139,21 @@
   <script src="js/form-component.js"></script>
     <script type="text/javascript">
         $(function () {
-			$('#file_upload').uploadify({
-			    'swf': 'assets/uploadify/uploadify.swf',
-				'uploader' : 'Uploader.axd',
+            var id = $("#txtID").val()
+            $('#file_upload').uploadify({
+                'swf': 'assets/uploadify/uploadify.swf',
+                'uploader': 'Uploader.axd',
                 'script': 'Uploader.axd',
+                'fileTypeExts': '*.gif; *.jpeg; *.jpg; *.png',  
                 'onUploadStart': function (file) {
-                    $("#file_upload").uploadify("settings", "formData", { 'jqfgid': 3 });
+                    $("#file_upload").uploadify("settings", "formData", { 'jqfgid': id });
                     //在onUploadStart事件中，也就是上传之前，把参数写好传递到后台。  
-                } 
-			});
-		});
+                },
+                'onUploadSuccess': function (file, data, response) {
+                    $("#txtImg").val($("#txtImg").val() + "," + data);
+                }
+            });
+        });
 	</script>
     </form>
   </body>
