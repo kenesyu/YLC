@@ -345,7 +345,7 @@ function xulin_product(box,obj){
 				if(txt[i]){
 					strong.eq(i).text(txt[i]);
 				}else{
-					strong.eq(i).text('这是第' + (i + 1) + '张图片')
+//					strong.eq(i).text('这是第' + (i + 1) + '张图片')
 				};
 			};
 		})();

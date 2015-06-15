@@ -80,7 +80,7 @@
                                               <label class="col-sm-2 control-label col-sm-2">上传图片</label>
                                               <div class="col-sm-10">
                                                   	<div id="queue"></div>
-		                                            <input id="file_upload" name="file_upload" type="file" multiple="true">
+		                                            <input id="file_upload" name="file_upload" type="file" multiple="true">&nbsp;&nbsp;<a href="javascript:void(0)" onclick='GOClick()'>查看图片</a>
                                               </div>
                                      </div>
                                          <div class="form-group">
@@ -138,6 +138,11 @@
   <!--script for this page-->
   <script src="js/form-component.js"></script>
     <script type="text/javascript">
+        function GOClick() {
+            var url = "JQFG_IMG.aspx?id=" + $("#txtID").val() + "&tempid=" + $("#txtImg").val();
+            window.open(url);
+        }
+
         $(function () {
             var id = $("#txtID").val()
             $('#file_upload').uploadify({

@@ -10,60 +10,42 @@
 namespace YLCWeb {
     
     
-    public partial class Index {
+    public partial class JQFG {
         
         /// <summary>
-        /// repZhaobiaogonggao 控件。
+        /// repMenu 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repZhaobiaogonggao;
+        protected global::System.Web.UI.WebControls.Repeater repMenu;
         
         /// <summary>
-        /// username 控件。
+        /// lblTitle 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText username;
+        protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
-        /// password 控件。
+        /// lblDetails 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
+        protected global::System.Web.UI.WebControls.Label lblDetails;
         
         /// <summary>
-        /// btnLogin 控件。
+        /// repImgList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
-        
-        /// <summary>
-        /// repjingquyaowen 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repjingquyaowen;
-        
-        /// <summary>
-        /// repJQTP 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repJQTP;
+        protected global::System.Web.UI.WebControls.Repeater repImgList;
     }
 }

@@ -13,10 +13,15 @@ namespace YLCWeb.Admin
 {
     public partial class JQFG : System.Web.UI.Page
     {
+
+        public string strID = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack) {
+                strID = "";
                 if (Request.QueryString["id"] != null && Request.QueryString["id"].ToString() != "") {
+                    strID = Request.QueryString["id"].ToString();
                     try
                     {
                         DataBaseHelper dbHelper = new DataBaseHelper(ConfigurationManager.ConnectionStrings["DB"].ToString());

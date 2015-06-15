@@ -40,7 +40,7 @@
                             
                         </div>
                     </div>
-                    <div class="head_menu">
+                                        <div class="head_menu">
                     	<ul>
                         	<li>
                             	<a href="index.aspx" class="cur">首页</a>
@@ -49,7 +49,7 @@
                             	<a href="zngl.aspx?id=1">管理职能</a>
                             </li>
                         	<li>
-                            	<a href="#">景区风光</a>
+                            	<a href="JQFG.aspx">景区风光</a>
                             </li>
                         	<li>
                             	<a href="zwxx.aspx?t=<%= URLConvert("景区要闻") %>">政务信息</a>
@@ -171,7 +171,7 @@
                             <div class="line1_r box1">
                                 <h3>
                                     <span>景区要闻</span>
-                                    <a href="#">more&gt;&gt;</a>
+                                    <a href="zwxx.aspx?t=<%= URLConvert("景区要闻") %>">more&gt;&gt;</a>
                                 </h3>
                                 <ul>
                                     <asp:Repeater ID="repjingquyaowen" runat="server">
@@ -195,10 +195,11 @@
                             </h3>
                             <div class="ht20"></div>
                             <div class="product_img product_img_scr">
-                            	<img src="img/img_s1.jpg">
-                            	<img src="img/img_s2.jpg">
-                            	<img src="img/img_s3.jpg">
-                            	<img src="img/img_s1.jpg">
+                                <asp:Repeater runat="server" ID="repJQTP">
+                                <ItemTemplate>
+                                <img src="/Upload/<%# Eval("NewName") %>">
+                                </ItemTemplate>
+                            	</asp:Repeater>
                             </div>
 							<script>
 							    $(function () {

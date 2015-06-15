@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ZCFG.aspx.cs" Inherits="YLCWeb.ZCFG" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JQFG.aspx.cs" Inherits="YLCWeb.JQFG" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,12 +17,43 @@
 		<link rel="stylesheet" type="text/css" href="css/pages.css">
 		<script type="text/javascript" src="js/base.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+
+        <link href="/js/plugSlider/flexslider.css" rel="stylesheet" />
+        <script type="text/javascript" src="/js/plugSlider/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="/js/plugSlider/modernizr.js"></script>
+
 		<!--plugin-->
 		<script>
 		    $(function () {
-
+		        $(window).load(function () {
+		            $('.flexslider').flexslider({
+		                animation: "slide"
+		            });
+		        });
 		    });
 		</script>
+        <style id="stylemodule">
+            #module349 {border:none;}
+            #module349 {padding:0px;}
+            #module349 .formMiddle349{border:none;}
+            #module349 .formMiddle349{padding:0px;}
+            #module349 .formMiddle349 .formMiddleCenter349{border:none;}
+            #module349 .formMiddle349 .formMiddleCenter349{padding:0px;}
+            #module349 .formTop349{display:none;}
+            #module349 .formBottom349{display:none;}
+            #module349 .formMiddle349 .formMiddleLeft349{display:none;}
+            #module349 .formMiddle349 .formMiddleRight349{display:none;}
+            #module349 .formBanner349{display:none;}
+            #module349 .formMiddleContent349{padding:0px;}
+            #module349 .formMiddleContent349{margin-left:10px;}
+            #module349 .formMiddleContent349{margin-right:10px;}
+            #module349 .formMiddleContent349{margin-top:0px;}
+            #module349 .formMiddleContent349{margin-bottom:20px;}
+            #module349 {background:none;}
+            #module349 .formMiddle349 {background:none;}
+            #module349 .formMiddle349 .formMiddleCenter349{background:none;}
+            #module349 .formMiddleContent349{background:none;}
+            </style>
 	</head>
 	<body>
 		<!-------------------------------------- 头部开始 -------------------------------------->
@@ -70,30 +101,19 @@
                 	<div class="con_left_er">
                         <div class="px_l_share">
                             <h3>
-                                <i>政策法规</i>
+                                <i>景区列表</i>
                                 </h3>
                             <div class="px_con_er">
                                 <ul>
+                                    <asp:Repeater ID="repMenu" runat="server">
+                                    <ItemTemplate>
                                     <li>
-                                        <a href="ZCFG.aspx?id=1">
-                                            审核流程
+                                        <a href="JQFG.aspx?id=<%# Eval("id") %>">
+                                            <%# Eval("Title") %>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="ZCFG.aspx?id=2">
-                                            规划建设
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="ZCFG.aspx?id=3">
-                                            规范管理
-                                        </a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="ZCFG.aspx?id=4">
-                                            法规制度
-                                        </a>
-                                    </li>
+                                    </ItemTemplate>
+                                    </asp:Repeater>              
                                 </ul>
                                 <div class="clear"></div>
                             </div>
@@ -107,6 +127,19 @@
                         <div class="r_con_px">
                         	<div class="ht30"></div>
                         	<asp:Label ID="lblDetails" runat="server"></asp:Label>
+                            <div class="ht400">
+                               <div class="detail-content-img flexslider">
+                                    <ul class="slides">
+                                        <asp:Repeater runat="server" ID="repImgList">
+                                        <ItemTemplate>
+                                        <li>
+                                            <img width="697px" height="299px" src="/Upload/<%# Eval("NewName") %>" class="ps" />
+                                        </li>
+                                        </ItemTemplate>
+                                        </asp:Repeater>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="clear"></div>
                             <div class="ht30"></div>
                         </div>

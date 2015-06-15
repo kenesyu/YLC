@@ -54,7 +54,7 @@
                             	<a href="zngl.aspx?id=1">管理职能</a>
                             </li>
                         	<li>
-                            	<a href="#">景区风光</a>
+                            	<a href="JQFG.aspx">景区风光</a>
                             </li>
                         	<li>
                             	<a href="zwxx.aspx?t=<%= URLConvert("景区要闻") %>">政务信息</a>
@@ -63,7 +63,7 @@
                             	<a href="zcfg.aspx?id=1">政策法规</a>
                             </li>
                         	<li>
-                            	<a href="#">在线互动</a>
+                            	<a href="MsgBoard.aspx">在线互动</a>
                             </li>
                         </ul>
                     </div>

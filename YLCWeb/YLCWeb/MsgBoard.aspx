@@ -93,16 +93,28 @@
                         大连海滨—旅顺口风景名胜区
                     </div>
                 </div>
-                <div class="head_menu">
-                    <ul>
-                        <li><a href="index.aspx" class="cur">首页</a> </li>
-                        <li><a href="zngl.aspx?id=1">管理职能</a> </li>
-                        <li><a href="#">景区风光</a> </li>
-                        <li><a href="zwxx.aspx?t=<%= URLConvert("景区要闻") %>">政务信息</a> </li>
-                        <li><a href="zcfg.aspx?id=1">政策法规</a> </li>
-                        <li><a href="#">在线互动</a> </li>
-                    </ul>
-                </div>
+                    <div class="head_menu">
+                    	<ul>
+                        	<li>
+                            	<a href="index.aspx" class="cur">首页</a>
+                            </li>
+                        	<li>
+                            	<a href="zngl.aspx?id=1">管理职能</a>
+                            </li>
+                        	<li>
+                            	<a href="JQFG.aspx">景区风光</a>
+                            </li>
+                        	<li>
+                            	<a href="zwxx.aspx?t=<%= URLConvert("景区要闻") %>">政务信息</a>
+                            </li>
+                        	<li>
+                            	<a href="zcfg.aspx?id=1">政策法规</a>
+                            </li>
+                        	<li>
+                            	<a href="MsgBoard.aspx">在线互动</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>
