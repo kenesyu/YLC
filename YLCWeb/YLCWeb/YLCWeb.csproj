@@ -1923,6 +1923,7 @@
       <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Handler\Uploader.cs" />
+    <Compile Include="Handler\UploaderFile.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

@@ -41,7 +41,7 @@ a_href : 是否需要a标签链接，值为'yes'是要，不写或其他值为�
 effect : 是什么特效，'slide'为滑动特效，'fade'为淡隐特效
 */
 
-function xulin_banner(box,obj){
+function xulin_banner(box, obj) {
 	var effect_val = obj&&obj.effect_val ? obj.effect_val : 1000;
 	var interval_val = obj&&obj.interval_val ? obj.interval_val : 3000;
 	var icon_cut = obj&&obj.icon_cut ? obj.icon_cut : 'yes';
@@ -54,7 +54,7 @@ function xulin_banner(box,obj){
 	var txt = [];
 	var src = [];
 	(function(){
-		for(var i = 0; i < length; i++){
+	    for (var i = 0; i < length; i++) {
 			href[i] = img.eq(i).attr('href');
 		};
 	})();
@@ -109,7 +109,7 @@ function xulin_banner(box,obj){
 		'top' : 0
 	});
 	(function(){
-		for(var i = 0; i < length; i++){
+	    for (var i = 0; i < length; i++) {
 			li.eq(i).css({'backgroundImage' : 'url("' + src[i] + '")'});
 		};
 	})();

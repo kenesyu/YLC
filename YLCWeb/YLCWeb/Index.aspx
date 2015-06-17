@@ -154,11 +154,11 @@
                                     <span>图片新闻</span>
                                 </h3>
                                 <div class="box_swf box_swf_scr">
-                                	<img src="img/img_b.jpg" width="100%">
-                                	<img src="img/img_b.jpg" width="100%">
-                                	<img src="img/img_b.jpg" width="100%">
-                                	<img src="img/img_b.jpg" width="100%">
-                                	<img src="img/img_b.jpg" width="100%">
+                                     <asp:Repeater ID="imgList" runat="server">
+                                     <ItemTemplate>
+                                       <img src="<%# Eval("url") %>" width="100%" href="Details.aspx?t=ZWXX&id=<%# Eval("id") %>">
+                                     </ItemTemplate>
+                                     </asp:Repeater>     	
                                 </div>
                                 <script>
                                     $(function () {

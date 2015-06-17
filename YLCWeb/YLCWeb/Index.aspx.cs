@@ -8,6 +8,7 @@ using DBHelper;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using System.Text.RegularExpressions;
 namespace YLCWeb
 {
     public partial class Index : System.Web.UI.Page
@@ -30,6 +31,21 @@ namespace YLCWeb
             this.repJQTP.DataSource = dbHelper.ExecuteDataTable("select * from T_JQFG_IMG where id in(select max(id) from T_JQFG_IMG group by refid)");
             this.repJQTP.DataBind();
 
+            DataTable dt = dbHelper.ExecuteDataTable("select top 5 * from T_ZWXX where type = '景区要闻' and demo like '%img%' order by id desc");
+
+            DataTable dtImg = new DataTable();
+            dtImg.Columns.Add("url");
+            dtImg.Columns.Add("id");
+            foreach (DataRow dr in dt.Rows) {
+                DataRow drrow = dtImg.NewRow();
+                drrow[0] = GetHtmlImageUrlList(dr["demo"].ToString())[0].ToString();
+                drrow[1] = dr["id"].ToString();
+                dtImg.Rows.Add(drrow);
+            }
+
+            this.imgList.DataSource = dtImg;
+            this.imgList.DataBind();
+
             dbHelper.Dispose();
         }
 
@@ -50,6 +66,27 @@ namespace YLCWeb
                 Response.Write("<script language=javascript>alert('用户名密码不正确请重新输入');</script>");
                 Response.Redirect("index.aspx");
             }
+        }
+
+        /// <summary> 
+        /// 取得HTML中所有图片的 URL。 
+        /// </summary> 
+        /// <param name="sHtmlText">HTML代码</param> 
+        /// <returns>图片的URL列表</returns> 
+        public static string[] GetHtmlImageUrlList(string sHtmlText)
+        {
+            // 定义正则表达式用来匹配 img 标签 
+            Regex regImg = new Regex(@"<img\b[^<>]*?\bsrc[\s\t\r\n]*=[\s\t\r\n]*[""']?[\s\t\r\n]*(?<imgUrl>[^\s\t\r\n""'<>]*)[^<>]*?/?[\s\t\r\n]*>", RegexOptions.IgnoreCase);
+
+            // 搜索匹配的字符串 
+            MatchCollection matches = regImg.Matches(sHtmlText);
+            int i = 0;
+            string[] sUrlList = new string[matches.Count];
+
+            // 取得匹配项列表 
+            foreach (Match match in matches)
+                sUrlList[i++] = match.Groups["imgUrl"].Value;
+            return sUrlList;
         }
 
         public string URLConvert(string key)
