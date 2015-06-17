@@ -128,7 +128,7 @@
                     <div class="ht10"></div>
                 	<div class="foot_px1">
                     	<span>技术支持：</span>
-                    	<a href="#">大连易是网络科技有限公司</a> |
+                    	<a href="#">大连易是网络科技有限公司</a>
                     </div>
                 </div>
 			</div>

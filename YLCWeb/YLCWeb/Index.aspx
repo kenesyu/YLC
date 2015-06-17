@@ -78,7 +78,7 @@
                             <div class="px_l_share">
                                 <h3>
                                     <i>招标公告</i>
-                                    <b><a href="#">更多&gt;&gt;</a></b>
+                                    <b><a href="ZWXX.aspx?t=<%= URLConvert("招标公告")%>">更多&gt;&gt;</a></b>
                                 </h3>
                                 <div class="px_con">
                                 	<ul>
