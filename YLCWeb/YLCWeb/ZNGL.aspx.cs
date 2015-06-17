@@ -31,6 +31,7 @@ namespace YLCWeb
                     //this.lbl
                     this.lblTitle.Text = dt.Rows[0]["Title"].ToString();
                     this.lblDetails.Text = dt.Rows[0]["Demo"].ToString();
+                    dbHelper.Dispose();
                 }
                 else {
                     Response.Redirect("index.aspx");

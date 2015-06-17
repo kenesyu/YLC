@@ -41,6 +41,7 @@ namespace YLCWeb.Admin
                                 this.txtImg.Text = v;
                             }
                         }
+                        dbHelper.Dispose();
                     }
                     catch { }
                 }

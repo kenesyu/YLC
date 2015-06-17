@@ -28,6 +28,7 @@ namespace YLCWeb
             DataTable dt = dbHelper.ExecuteDataTable("select * from T_ZWXX where type='" + Request.QueryString["t"].ToString() + "' order by id desc");
             this.repList.DataSource = dt;
             this.repList.DataBind();
+            dbHelper.Dispose();
         }
 
         public string URLConvert(string key)

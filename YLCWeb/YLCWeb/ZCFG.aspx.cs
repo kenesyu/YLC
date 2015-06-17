@@ -26,6 +26,7 @@ namespace YLCWeb
             {
                 DataBaseHelper dbHelper = new DataBaseHelper(ConfigurationManager.ConnectionStrings["DB"].ToString());
                 DataTable dt = dbHelper.ExecuteDataTable("select * from T_ZCFG where id=" + id);
+                dbHelper.Dispose();
                 if (dt.Rows.Count > 0)
                 {
                     //this.lbl

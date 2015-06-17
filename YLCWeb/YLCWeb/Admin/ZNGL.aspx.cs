@@ -45,6 +45,7 @@ namespace YLCWeb.Admin
                 new SqlParameter("@demo", this.editor1.Value),
                 new SqlParameter("@id",this.txtID.Text)
             });
+            dbHelper.Dispose();
             Response.Write("<script>alert('保存成功')</script>");
         }
     }

@@ -28,6 +28,7 @@ namespace YLCWeb.Admin
                 new SqlParameter("@username", this.username.Value.Trim().ToString()),
                 new SqlParameter("@password", this.password.Value.ToString())
             });
+            dbhelper.Dispose();
             if (dt.Rows.Count != 0)
             {
                 Session.Add("Login", true);
