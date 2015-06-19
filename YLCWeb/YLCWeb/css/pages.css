@@ -367,9 +367,9 @@
 .r_con_px{
 }
 .r_con_px p{
-	font-family:"仿宋";
-	font-size:22px;
-	color:#768484;
+	font-family:"宋体";
+	font-size:12px;
+	color:#000000;
 	line-height:40px;
 }
 .r_con_px p.dan{
@@ -377,8 +377,8 @@
 }
 .r_con_px p span{
 	float:right;
-	width:380px;
-	text-align:center;
+	width:100%;
+	text-align:left;
 }
 .foot_con{
 	height:100px;

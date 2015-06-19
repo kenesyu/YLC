@@ -20,16 +20,16 @@
     <script type="text/javascript" src="js/main.js"></script>
     <!--plugin-->
     <style>
-        a.f_orange{ color:#FF9A00; text-decoration:none;}
-        a.f_orange:link{ color:#FF9A00; text-decoration:none;}
-        a.f_orange:visited{ color:#FF9A00; text-decoration:none;}
-        a.f_orange:hover{ color:#cc0000; text-decoration:underline;}
-        a.f_orange:actived{ color:#FF9A00; text-decoration:none;}
-        a.f_green{color:#2c850d; text-decoration:none;}
-        a.f_green:link{color:#2c850d; text-decoration:none;}
-        a.f_green:visited{color:#2c850d; text-decoration:none;}
-        a.f_green:hover{color:#999999; text-decoration:underline;}
-        a.f_green:actived{color:#2c850d; text-decoration:none;}
+        a.f_orange{ color:#000000; text-decoration:none;}
+        a.f_orange:link{ color:#000000; text-decoration:none;}
+        a.f_orange:visited{ color:#000000; text-decoration:none;}
+        a.f_orange:hover{ color:#000000; text-decoration:underline;}
+        a.f_orange:actived{ color:#000000; text-decoration:none;}
+        a.f_green{color:#000000; text-decoration:none;}
+        a.f_green:link{color:#000000; text-decoration:none;}
+        a.f_green:visited{color:#000000; text-decoration:none;}
+        a.f_green:hover{color:#000000; text-decoration:underline;}
+        a.f_green:actived{color:#000000; text-decoration:none;}
         table#border{        }        table#border td{        border-bottom:#ebebeb 1px dashed;        height:30px;        vertical-align:middle;        }
     </style>
 </head>

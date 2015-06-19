@@ -76,7 +76,9 @@
                                 <asp:Label ID="lblTitle" Style="font-size: 14px;" runat="server"></asp:Label></b></div>
                         <div class="ht30" style="text-align: right">
                             <asp:Label ID="lblTime" runat="server"></asp:Label></div>
-                        <asp:Label ID="lbldetails" runat="server"></asp:Label>
+                            <div>
+                                <asp:Label ID="lbldetails" runat="server"></asp:Label>
+                            </div>
                         <div class="clear">
                         </div>
                         <div class="ht30">
