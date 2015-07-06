@@ -28,7 +28,7 @@ namespace YLCWeb
             this.repjingquyaowen.DataSource = dbHelper.ExecuteDataTable("select top 5 * from T_ZWXX where type = '景区要闻' order by id desc");
             this.repjingquyaowen.DataBind();
 
-            this.repJQTP.DataSource = dbHelper.ExecuteDataTable("select * from T_JQFG_IMG where id in(select max(id) from T_JQFG_IMG group by refid)");
+            this.repJQTP.DataSource = dbHelper.ExecuteDataTable("select * from T_JQFG_IMG where id in(select max(a.id) from T_JQFG_IMG a inner join T_jqfg b on a.refid =b.id group by a.refid)");
             this.repJQTP.DataBind();
 
             DataTable dt = dbHelper.ExecuteDataTable("select top 5 * from T_ZWXX where type = '景区要闻' and demo like '%img%' order by id desc");
