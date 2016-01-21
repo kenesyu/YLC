@@ -77,7 +77,7 @@
                         <div class="left_line_px1">
                             <div class="px_l_share">
                                 <h3>
-                                    <i>招标公告</i>
+                                    <i>信息公告</i>
                                     <b><a href="ZWXX.aspx?t=<%= URLConvert("招标公告")%>">更多&gt;&gt;</a></b>
                                 </h3>
                                 <div class="px_con">
@@ -124,22 +124,22 @@
                                 	<div class="ht10"></div>
                                 	<ul>
                                     	<li>
-                                        	<a href="#">住建部</a>
+                                        	<a target="_blank" href="http://www.mohurd.gov.cn/">住建部</a>
                                         </li>
                                         <li>
-                                        	<a href="#">辽宁省住建厅</a>
+                                        	<a target="_blank" href="http://www.lnjst.gov.cn/website/main/index.aspx">辽宁省住建厅</a>
                                         </li>
                                         <li>
-                                        	<a href="#">大连市城建局</a>
+                                        	<a target="_blank" href="http://www.cjj.dl.gov.cn/">大连市城建局</a>
                                         </li>
                                         <li>
-                                        	<a href="#">旅顺口区人民政府</a>
+                                        	<a target="_blank" href="http://www.dllsk.gov.cn/">旅顺口区人民政府</a>
                                         </li>
                                         <li>
-                                        	<a href="#">老虎滩海洋公园</a>
+                                        	<a target="_blank" href="http://www.laohutan.com.cn/">老虎滩海洋公园</a>
                                         </li>
                                         <li>
-                                        	<a href="#">森林动物园</a>
+                                        	<a target="_blank" href="http://www.dlzoo.com/">森林动物园</a>
                                         </li>
                                     </ul>
                                 </div>

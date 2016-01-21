@@ -40,7 +40,7 @@ namespace YLCWeb
                     if (dt.Rows.Count > 0)
                     {
                         this.lblTitle.Text = dt.Rows[0]["Title"].ToString();
-                        this.lblDetails.Text = dt.Rows[0]["Demo"].ToString();
+                        this.lblDetails.Text = dt.Rows[0]["Demo"].ToString().Replace("span","label");
                         repImgList.DataSource = dbHelper.ExecuteDataTable("select * from T_JQFG_IMG where refid = " +Request.QueryString["id"].ToString());
                         repImgList.DataBind();
                     }
@@ -51,7 +51,7 @@ namespace YLCWeb
                     if (dt.Rows.Count > 0)
                     {
                         this.lblTitle.Text = dt.Rows[0]["Title"].ToString();
-                        this.lblDetails.Text = dt.Rows[0]["Demo"].ToString();
+                        this.lblDetails.Text = dt.Rows[0]["Demo"].ToString().Replace("span", "label"); 
                         repImgList.DataSource = dbHelper.ExecuteDataTable("select * from T_JQFG_IMG where refid = " + id);
                         repImgList.DataBind();
                     }
